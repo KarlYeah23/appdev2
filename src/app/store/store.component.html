@@ -1,0 +1,30 @@
+<div class="container-fluid hero-contact p-0 m-0">
+  <table >
+    <div *ngFor="let category of this.productsCategory" class="col-md-4">
+      <tr>
+        <h2>{{category.categoryName}}</h2>
+        <td *ngFor="let product of this.category.products;" class="col-md-4">
+          <div class="productcell"></div><img class="product" src="../assets/products/{{product.imageFile}}.jpg"/>          
+          <p class="productname">{{product.name}}</p>
+          <p class="productcategory">{{product.description}}</p> 
+          <p class="productcategory">{{product.categoryName}}</p> 
+          <p class="productcategory">{{product.unitOfMeasure}}</p> 
+          <p class="productcategory">{{product.price}}</p>
+          <button>Add to Cart</button>
+          <button>Remove from Cart</button>
+        </td>
+      </tr>
+    </div>
+  </table>
+
+
+  <ul class="heroes">
+    <li *ngFor="let product of products">
+      <a routerLink="/detail/{{product.id}}">
+        <span class="badge">{{product.id}}</span> {{product.name}}
+      </a>
+      <button type="button" class="delete" title="delete product"
+        (click)="delete(product)">x</button>
+    </li>
+  </ul>
+</div>

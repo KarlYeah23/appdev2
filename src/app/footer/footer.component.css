@@ -1,0 +1,10 @@
+.footer{
+    width:auto; 
+    height:68px;
+    text-align: right;
+    padding: 20px;
+    background-color:#454F5C;
+    color: white;
+    font-family: Arial;
+    font-weight: bold;
+}

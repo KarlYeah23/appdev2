@@ -1,0 +1,31 @@
+.header{
+    width: auto; 
+    height: 150px;
+    text-align: center;
+
+    background-image: url("../../assets/header.jpg");
+    background-position: center;
+    background-size: auto;
+}
+
+.image{
+    border-width: 3px;
+    border-style: solid;
+    border-color: black;
+}
+
+.table{
+    margin: auto;
+    padding: 20px;
+}
+
+.button1{
+    width:100px; 
+    height:40px;
+    background-color: white;
+    border-width: 3px;
+    border-style: solid;
+    border-color: black;
+    font-family: Arial;
+    font-weight: bold;
+}
